@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zin Koła Foto · Techniki WWW, ćwiczenie 4 (selektory)</title>
+</head>
+<body>
+<!-- Ćwiczenie 4: F12 → Console → document.querySelectorAll('TWÓJ SELEKTOR').length -->
+<header>
+  <h1>Zin Koła Foto</h1>
+  <nav>
+    <ul>
+      <li><a href="#wyjscie">Wyjście</a></li>
+      <li><a href="#grafik">Grafik</a></li>
+      <li><a href="#zapisy">Zapisy</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <article id="wyjscie">
+    <h2>Wyjście na Kazimierz</h2>
+    <p>Zbiórka w sobotę o 9:00 przy kościele Bożego Ciała.</p>
+    <p>Weź statyw i zapasową baterię.</p>
+    <aside>
+      <p>Deszcz? Idziemy do Muzeum Fotografii.</p>
+    </aside>
+  </article>
+  <article id="grafik">
+    <h2>Grafik spotkań</h2>
+    <table>
+      <caption>Spotkania w listopadzie</caption>
+      <tr><th>Data</th><th>Temat</th></tr>
+      <tr><td>04.11</td><td>Portret</td></tr>
+      <tr><td>18.11</td><td>Noc w mieście</td></tr>
+      <tr><td>25.11</td><td>Ciemnia</td></tr>
+    </table>
+  </article>
+  <form id="zapisy">
+    <label for="imie">Imię</label>
+    <input id="imie" name="imie">
+    <label for="mail">E-mail</label>
+    <input type="email" id="mail" name="mail" required>
+    <button>Zapisz</button>
+  </form>
+</main>
+<footer>
+  <p>Koło Foto · <a href="https://example.org">strona wydziału</a></p>
+</footer>
+</body>
+</html>

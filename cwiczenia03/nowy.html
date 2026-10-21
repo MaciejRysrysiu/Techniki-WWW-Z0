@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zin Koła Foto · stara wersja · Techniki WWW, ćwiczenie 2</title>
+</head>
+<body>
+<!-- Ćwiczenie 2: przepisz 8 fragmentów zgodnie z HTML Living Standard. Treść zostaw bez zmian. -->
+
+<!-- Przestarzałe tagi - należy użyć css -->
+<p style="text-align: center; color: red;">Uwaga: zbiórka przeniesiona!</p>
+
+<!-- istnieje juz nowy tag w ktorym takie informacje powinny byc zapisywane -->
+<time datetime="21.10.2026 9:00">Najbliższe wyjście: </time>
+
+<!-- istnieja juz nowe tagi do tego przeznaczone, rozwiniecie nie wymaga ingerencji JS -->
+<details>
+    <summary>Jak się zapisać?</summary>
+    <p>Wypełnij formularz w stopce.</p>
+</details>
+
+
+<!-- ten blok powinniśmy wrzucić do paragrafu jesli chcemy zmienic style -->
+<p class="modal" id="okno">Dzięki za zapis!</p>
+
+<!-- brak type w input -->
+<div class="szukaj"><form><input type="text" name="q"></form></div>
+
+<!-- zly typ inputu, brak label, placeholder niewlasciwie uzyty -->
+<form><label for="mail">e-mail: <input type="email" id="mail"></label> <button>Zapisz</button></form>
+
+<!-- Nie wiem, po nagłówku powinna znajdować się treść (?) -->
+<h1>Zin Koła Foto</h1>
+<h2>nr 3 · jesień</h2>
+
+<!-- brakuje alt, oraz figure i figcaption -->
+<figure><img src="mapa.png" alt="mapa"><figcaption>Trasa</figcaption></figure>
+
+<script>
+  function rozwin() { document.querySelector('.faq-odp').hidden = !document.querySelector('.faq-odp').hidden; }
+</script>
+</body>
+</html>

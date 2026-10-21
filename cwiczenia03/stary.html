@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zin Koła Foto · stara wersja · Techniki WWW, ćwiczenie 2</title>
+</head>
+<body>
+<!-- Ćwiczenie 2: przepisz 8 fragmentów zgodnie z HTML Living Standard. Treść zostaw bez zmian. -->
+
+<!-- 1 -->
+<center><font color="red">Uwaga: zbiórka przeniesiona!</font></center>
+
+<!-- 2 -->
+<p>Najbliższe wyjście: <span class="data">21.10.2026, 9:00</span></p>
+
+<!-- 3 -->
+<div class="faq" onclick="rozwin()">Jak się zapisać?</div>
+<div class="faq-odp">Wypełnij formularz w stopce.</div>
+
+<!-- 4 -->
+<div class="modal" id="okno">Dzięki za zapis!</div>
+
+<!-- 5 -->
+<div class="szukaj"><form><input name="q"></form></div>
+
+<!-- 6 -->
+<form><input type="text" name="mail" placeholder="e-mail"> <button>Zapisz</button></form>
+
+<!-- 7 -->
+<h1>Zin Koła Foto</h1><h2>nr 3 · jesień</h2>
+
+<!-- 8 -->
+<img src="mapa.png"><div class="podpis">Trasa</div>
+
+<script>
+  function rozwin() { document.querySelector('.faq-odp').hidden = !document.querySelector('.faq-odp').hidden; }
+</script>
+</body>
+</html>
