@@ -1,0 +1,8 @@
+document.querySelectorAll('nav a').length -> 3
+document.querySelectorAll("h2 + p").length -> 1
+document.querySelectorAll("article > p").length -> 2
+document.querySelectorAll("tr:nth-child(even)").length - > 2
+document.querySelectorAll('a[href^="https"]').length -> 1
+document.querySelectorAll('input:required').length -> 1
+document.querySelectorAll('article:has(table)').length -> 1
+document.querySelectorAll(':where(h1, h2)').length -> 3
