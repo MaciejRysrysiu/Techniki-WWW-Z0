@@ -34,13 +34,24 @@
                 </ul>
             </section>
 
+            <section id="poziomy_trudnosci">
+                <h2>Poziomy trudności</h2>
+                <p>Oryginalna gra z systemu Windows zawiera 4 poziomu trudności.</p>
+                <ul>
+                    <li><strong>początkujący</strong> - plansza 8x8 pól, 10 minut, ryzyko trafienia w minę: 15,625%</li>
+                    <li><strong>zaawansowany</strong> - plansza 16x16 pól, 40 minut, ryzyko trafienia w minę: 15,625%</li>
+                    <li><strong>ekspert</strong> - plansza 30x16 pól, 99 minut, ryzyko trafienia na minę: 20,625%</li>
+                </ul>
+            </section>
+
             <section id="historia">
                 <h2>Historia sapera</h2>
                 <p></p>
             </section>
             
-            <section id="apliakcje">
-                <h2>Przykładowe Aplikację z grą Saper</h2>
+            <section id="warianty_gry">
+                <h2>Klony i warianty gry saper</h2>]
+                <p>Autorem gry jest Curt Johnson, który napisał tą grę dla systemu operacyjnego </p>
             </section>
 
             <section id="gra">
@@ -54,63 +65,64 @@
                 <h2>Jak być lepszym?</h2>
                 <p>Aby być lepszym w grze Saper, warto nauczyć się rozpoznawać typowe wzorce liczbowe na planszy. To pozwala na lepsze planowanie ruchów i zwiększa szanse na zwycięstwo.</p>
                 <p>Niestety rozpoznawanie wzorców nie zawsze grawantuje zwycięstwo. W wielu sytuacjach nie ma lepszej opcji i trzeba zgadywać, gdzie znajduje się mina.</p>
-            <div class="blok-wzorcow">
-                <h3></h3>
-                <p></p>
-                <div class="wzorzec-obrazek"><img src="zdjecia/wzorce/edited/1-1-1-1-e.png" alt="przykładowy-wzorzec"></div>
-            </div>
 
             <div class="blok-wzorcow">
-                <h3></h3>
-                <p></p>
+                <h3>Wzorzec 1-1 przy krawędzi planszy</h3>
+                <p>Rozważając dwie górne cyfry "1". Jedynka na samej górze posiada dwa możliwe pola w których może znajdować się mina. Te same pola są dzielone z "1" poniżej. Więc trzecie pole które tej jedynki musi być bezpieczne (nie zawierające miny) - zielony</p>
                 <div class="wzorzec-obrazek"><img src="zdjecia/wzorce/edited/1-1-1-e.png" alt="przykładowy-wzorzec"></div>
             </div>
 
             <div class="blok-wzorcow">
-                <h3></h3>
-                <p></p>
+                <h3>Wzorzec 1-1-1 ciąg jedynek</h3>
+                <p>Ten wzorzec jest kontynułacją wcześniejszego wzora. Dwie górne "1" współdzielą dwa przyległe pola. Musi być w nich dokładnie jedna mina. Skoro ta mina zaspokaja zarówno pierwszą, jak i drugą jedynkę, to pola znajdujące się w zasięgu trzeciej i czwartej jedynki, ale poza zasięgiem tych pierwszych, muszą być całkowicie bezpieczne (zielone) </p>
+                <div class="wzorzec-obrazek"><img src="zdjecia/wzorce/edited/1-1-1-1-e.png" alt="przykładowy-wzorzec"></div>
+            </div>
+
+            <div class="blok-wzorcow">
+                <h3>Wzorzec 3-1</h3>
+                <p>Cyfra "3" styka się z czterema zakrytymi polami i potrzebuję aż trzech min. Jednak cyfra "1" nad nią wymusza że na dwóch polach (żółtych) znajdzie się tylko jedna mina. Więc na pozostałych cyfry "3" niestykających się z cyfrą "1" muszą znajdować się miny. Dodatkowo pole ponad żółtą strefą "1" jest bezpieczne (zielone).</p>
                 <div class="wzorzec-obrazek"><img src="zdjecia/wzorce/edited/1-1-3-e.png" alt="przykładowy-wzorzec"></div>
             </div>
 
             <div class="blok-wzorcow">
-                <h3></h3>
-                <p></p>
+                <h3>Wzorzec 1-2-1</h3>
+                <p>Cyfra "2" potrzebuję dwóch min na trzech sąsiadujących polach. Gdyby mina znajdowała się na środkowym polu (zielonym), zaspokoiłaby obie sąsiadujące "1", co uniemożliwiłoby umieszczenie drugiej miny dla cyfry "2", bez łamania zasad. Więc jeśli mina nie może znajdować się na środkowym polu, miny muszą się znajdować na dwóch pozostałych polach. Dodatkowo umieszczenie tych dwóch min zaspokaja obie jedynki, więc wszystkie pola "1" nie sąsiadujące z "2" są bezpieczne (zielone).</p>
                 <div class="wzorzec-obrazek"><img src="zdjecia/wzorce/edited/1-2-1-e.png" alt="przykładowy-wzorzec"></div>
             </div>
 
             <div class="blok-wzorcow">
-                <h3></h3>
-                <p></p>
+                <h3>Wzorzec 1-3-1 na rogu</h3>
+                <p>Ten wzorzec jest szczególną sytuacja wzorca 3-1, gdzie w sąsiedztwie cyfry "3" znajdują się dwie "1". Wiemy dla każdej jedynki są dwa pola (zółte) gdzie znajduje się po jednej minie. Cyfra 3 jest zaspokojona przez dwie miny które sąsiadują z "1", więc trzecia mina musi znajdować się na rogu z "3" (czerwone). Dodatkowo miejsca które sąsiadują z "1" i nie sąsiadują z "3" są bezpiczene (zielone).</p>
                 <div class="wzorzec-obrazek"><img src="zdjecia/wzorce/edited/1-3-1-rog-e.png" alt="przykładowy-wzorzec"></div>
             </div>
 
             <div class="blok-wzorcow">
-                <h3></h3>
-                <p></p>
+                <h3>Wzorzec 1-4</h3>
+                <p>Cyfra "4" musi znaleźć cztery miny na pięciu sąsiadujących polach. Cyfra "4" styka się z "1", która posiada dwa wspólne pola z "4", na których może znajdować się tylko jedna mina. Z tego wynika że na pozostałych polach "4" muszą znajdować się pozostałe trzy miny.</p>
                 <div class="wzorzec-obrazek"><img src="zdjecia/wzorce/edited/1-4-e.png" alt="przykładowy-wzorzec"></div>
             </div>
 
             <div class="blok-wzorcow">
-                <h3></h3>
-                <p></p>
+                <h3>Wzorzec 2-2-1</h3>
+                <p>Analizujemy blok cyfr 2, 2 i 1. Pole z cyfra "2" sąsiadujące z cyfrą "1" posiada 3 pola, na których trzeba umieścić 2 miny. Na dwóch polach (żółtych), które sąsiadują z "1" może znaleść się tylko jedna mina. Więc na trzecim polu (czerwone) dwójki musi znajdować się mina.</p>
                 <div class="wzorzec-obrazek"><img src="zdjecia/wzorce/edited/2-2-1-prosto-e.png" alt="przykładowy-wzorzec"></div>
             </div>
 
             <div class="blok-wzorcow">
-                <h3></h3>
-                <p></p>
+                <h3>Wzorzec 2-2-2</h3>
+                <p>Ponieważ dla dwóch "2" sąsiadujących ze środkową dwójką, musimy znaleźć tylko jedną minę, możemy zredukować ten przykład do wzorca 1-2-1.</p>
                 <div class="wzorzec-obrazek"><img src="zdjecia/wzorce/edited/2-2-2-prosto-e.png" alt="przykładowy-wzorzec"></div>
             </div>
 
             <div class="blok-wzorcow">
-                <h3></h3>
-                <p></p>
+                <h3>Wzorzec 2-4</h3>
+                <p>Cyfra "4" ma wokół siebie już dwie postawione flagi, więc szuka jeszcze dwóch min. Cyfra "2" z jej lewej strony ma już jedną flagę nad sobą, więc w dwóch żółtych polach pod nią kryje się dokładnie jedna mina. "4" dzieli te żółte pola z "2", więc pobiera stamtąd tylko jedną minę. Jej ostatnia, czwarta mina musi zatem znajdować się w jedynym pozostałym polu (czerwone).</p>
                 <div class="wzorzec-obrazek"><img src="zdjecia/wzorce/edited/2-4-e.png" alt="przykładowy-wzorzec"></div>
             </div>
 
             <div class="blok-wzorcow">
-                <h3></h3>
-                <p></p>
+                <h3>Wzorzec 2-4 ver 2</h3>
+                <p>Cyfra "4" potrzebuje dwóch min (dwie ma w oflagowanych polach). Lewa "2" rezerwuje jedną minę w dwóch żółtych kwadratach. "4" dopełnia swój limit biorąc jedną minę z żółtej strefy, a drugą ze skrajnie prawego kwadratu (czerwone). Ponieważ "2" została w pełni zaspokojona przez żółtą strefę, cały lewy bok jest w pełni bezpieczny (zielone).</p>
                 <div class="wzorzec-obrazek"><img src="zdjecia/wzorce/edited/2-4v2-e.png" alt="przykładowy-wzorzec"></div>
             </div>
             </section>
