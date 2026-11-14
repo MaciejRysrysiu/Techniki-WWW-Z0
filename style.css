@@ -51,6 +51,9 @@
     margin: 0;
     padding: 0;
 }
+html, body{
+    width: 100%;
+}
 
 body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -88,11 +91,13 @@ p, ul{
 header{
     background-color: var(--bg-container);
     border-bottom: 1px solid var(--border-color);
-    padding: 1rem;
+    padding: 0.3rem 1rem 1rem 0.3rem;
     position: sticky;
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 4px var(--shadow-light);
+    transition: top 0.4s;
+    transition-timing-function: linear;
 }
 header h1{
     font-size: 1.5rem;
@@ -104,12 +109,12 @@ nav ul{
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 0.8rem;
+    flex-wrap: wrap;
 }
 nav a{
     font-weight: bold;
-    font-size: 1rem;
-    padding: 0.3rem 0;
+    font-size: 0.9rem;
     display: block;
 }
 
@@ -118,7 +123,7 @@ nav a{
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin-top: 0.5rem;
+    margin-top: 0.3rem;
     padding: 0.5rem;
     border-top: 1px solid var(--border-color);
 }
@@ -228,7 +233,7 @@ form{
     grid-template-columns: 1fr;
     gap: 1rem;
     align-items: center;
-    max-width: 600px;
+    max-width: 100%;
 }
 form label{
     font-weight: bold;
@@ -242,6 +247,7 @@ form input[type="text"], input[type="email"], textarea{
     border-radius: 4px;
     background-color: var(--bg-page);
     color: var(--text-main);
+    width: 100%;
 }
 form textarea{
     resize: vertical;
@@ -258,6 +264,7 @@ form input[type="submit"]{
     cursor: pointer;
     transition: background-color 0.3s;
     font-weight: bold;
+    max-width: 100%;
 }
 form input[type="submit"]:hover{
     background-color: var(--color-accent-hover);
@@ -416,19 +423,25 @@ div:has(> .dot) {
         border: 1px solid var(--border-color);
         box-shadow: 0 0 15px var(--shadow-light);
         text-align: left;
+        margin-top: 2rem;
+    }
+
+    #zmiana-motywu{
+        justify-content: left;
     }
     
     header h1 {
         text-align: left;
-        margin-bottom: 1.5rem;
+        margin-bottom: 0.5rem;
         border-bottom: 2px solid var(--color-accent);
-        padding-bottom: 0.5rem;
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     }
 
     nav ul {
         flex-direction: column;
         align-items: flex-start;
         gap: 0.2rem;
+        margin-bottom: 0;
     }
     
     nav a {

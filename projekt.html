@@ -66,8 +66,8 @@
                 <p>Przez ogromną popularność sapera, pojawiły się również turnieje e-sportowe, ustrukturyzowane zasady i sposób oceny wyników. Ponieważ gra Saper jest grą losową (plansza jest generowania przez komputer) i mogą się zdarzyć sytuacje rozwiązania całej planszy przez tylko jednym kliknięcie. Powstał algorytm 3BV, który oblicza minimalną liczbę kliknięc lewym przyciskiem myszy (bez stawiania flagi). Dlatego dla każdego poziomu trudności wyznaczono minimlną wartość 3BV: początkujący - 2, zaawansowany - 30, ekspert - 100. Główną metryką oceny gry jest czas rozwiązania planszy. Istnieje również alternatywny sposób oceniania gry, który liczy kliknięcia gracza i dzieli tą wartośc przez 3BV. W tym systemie rankigowym sprawdza się jak zawodnik optymalnie rozwiązał planszę, minimalizując losowość. Więcej o zasadach możesz przeczytać na stronie poświęconej <a href="https://minesweepergame.com/ranking-rules.php">zasadon rankingowym Sapera</a>.</p>
                 <p>Warto również zaznaczyć że są dwa style rozwiązywania Sapera</p>
                 <ul>
-                    <li><strong>FL (With Flags)</strong>Klasyczny sposób rozwiązywania gdzie gracz stawia flagi i używa kliknięcia do szybkiego odsłaniania liczb.</li>
-                    <li><strong>NL (No Flags)</strong>Trudniejszy sposób, głownie używany przez bardziej zaawansowanych graczy. Gracz nie stawia flag i zapamiętuję w którym miejscu znajdują się miny.</li>
+                    <li><strong>FL (With Flags)</strong> - Klasyczny sposób rozwiązywania gdzie gracz stawia flagi i używa kliknięcia do szybkiego odsłaniania liczb.</li>
+                    <li><strong>NL (No Flags)</strong> - Trudniejszy sposób, głownie używany przez bardziej zaawansowanych graczy. Gracz nie stawia flag i zapamiętuję w którym miejscu znajdują się miny.</li>
                 </ul>
                 <table class="tablica_rekordow">
                     <caption>Rekordy Świata</caption>
@@ -341,8 +341,8 @@
             <section id="komentarz">
                 <h2>Podziel się swoim rekordem w Saperze</h2>
                 <form autocomplete="on">
-                    <label for="nick">Twój nick:   <input type="text" id="nick" name="nick" autocomplete="off" required autofocus></label>
-                    <label for="email">Twój email: <input type="email" id="email" name="email" autocomplete="on" required></label>
+                    <label for="nick">Twój nick:   </label><input type="text" id="nick" name="nick" autocomplete="off" required>
+                    <label for="email">Twój email: </label><input type="email" id="email" name="email" autocomplete="on" required>
                     <label for="komentarz-uzytkownika">Twój komentarz: </label>
                     <textarea id="komentarz-uzytkownika" name="komentarz-uzytkownika" autocomplete="off" required></textarea>
                     <input type="submit" value="Opublikuj komentarz">
@@ -355,5 +355,6 @@
         </footer>
         <script src="script/slider.js"></script>
         <script src="script/zmiena-motywu.js"></script>
+        <script src="script/ukrywanie-menu.js"></script>
     </body>
 </html>
