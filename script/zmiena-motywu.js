@@ -1,4 +1,4 @@
-const switch_checkbox = document.querySelector("#switch");
+const switch_checkbox = document.querySelector(".switch");
 const aktualnyMotyw = localStorage.getItem("theme");
 if (aktualnyMotyw === "light") {
     switch_checkbox.checked = true;
