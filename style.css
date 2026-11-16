@@ -8,6 +8,7 @@
     --color-link-hover: #002277;
     --color-accent: #0055FF; 
     --color-accent-hover: #0033CC;
+    --text-on-accent: #FFFFFF;
     --color-warning: #FF0000; 
     --color-success: #008000; 
     --border-color: #B3B3B3;
@@ -26,6 +27,7 @@
     --color-link-hover:#99CCFF;
     --color-accent: #3399FF; 
     --color-accent-hover: #66B2FF;
+    --text-on-accent: #111111;
     --color-warning: #FF0000; 
     --color-success: #4DFF4D; 
     --border-color: #444444;
@@ -248,7 +250,7 @@ form textarea{
 }
 form input[type="submit"]{
     background-color: var(--color-accent);
-    color: #fff;
+    color: var(--text-on-accent);
     border: none;
     padding: 0.8rem 1.5rem;
     border-radius: 4px;
