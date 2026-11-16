@@ -311,7 +311,7 @@ form input[type="submit"]:hover{
     position: absolute;
     top: 10px;
     left: 15px;
-    color: var(--bg-container);
+    color: var(--text-main);
     font-size: 0.8rem;
 }
 .slide figcaption {
@@ -334,6 +334,10 @@ form input[type="submit"]:hover{
     border-radius: 0 3px 3px 0;
     user-select: none;
     background-color: rgba(255,255,255,0.9);
+    text-decoration: none;
+}
+
+.prev:hover, .next:hover{
     text-decoration: none;
 }
 .next {
