@@ -134,7 +134,7 @@ switch input {
     background-color: #777777;
     bottom: 0;
     cursor: pointer;
-    left: 0;
+    left: -2px;
     position: absolute;
     right: 0;
     top: 0;
